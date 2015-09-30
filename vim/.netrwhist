@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/home/aloftus/bin'
+let g:netrw_dirhist_2='/home/aloftus/.offlineimap'
+let g:netrw_dirhist_3='/home/aloftus/.mutt/address_provides'
+let g:netrw_dirhist_4='/home/aloftus/working/BW/home'
+let g:netrw_dirhist_5='/home/aloftus/working/isda/puppet/.git'
+let g:netrw_dirhist_6='/home/aloftus/.offlineimap'
+let g:netrw_dirhist_7='/home/aloftus/working/BW/home/.globus'
+let g:netrw_dirhist_8='/home/aloftus/working/pylut/pylut/replicate'
