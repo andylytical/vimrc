@@ -9,7 +9,6 @@ set sts=4
 set expandtab
 set ai
 set showmode
-set showcmd
 set nonu
 set ruler
 set nocompatible
@@ -84,6 +83,9 @@ vnoremap <F1> <ESC>
 set syntax=off
 set background=dark
 syntax on
+
+" this used to be up top, but something overrides it or turns it off
+set showcmd
 
 " Settings for mutt
 autocmd BufNewFile *mutt-* set fo=tcq tw=72
