@@ -17,13 +17,22 @@ set modelines=0
 set encoding=utf-8
 set scrolloff=3
 set visualbell
-set cursorline
 set ttyfast
 set laststatus=2
-set relativenumber
 set undofile
 set wildmenu
 set wildmode=list:longest
+
+" see also http://vim.wikia.com/wiki/Highlight_current_line
+":hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+:hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
+set cursorline
+" toggle cursorline cursorcolumn
+:nnoremap <Leader>c :set cursorline! cursorcolumn!<CR>
+
+" toggle relativenumber
+set relativenumber
+:nnoremap <Leader>n :set relativenumber!<CR>
 
 " Make regex behave better
 nnoremap / /\v
@@ -51,6 +60,9 @@ vnoremap <tab> %
 " Shortcut to create a line of ='s below the current line with same
 " length of current line
 nnoremap <leader>1 yypVr=
+
+" Create pydoc template
+nnoremap <leader>d yyp>>O"""<ESC>yyjp
 
 " Handle long lines correctly
 set wrap
