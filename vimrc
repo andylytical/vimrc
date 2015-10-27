@@ -61,7 +61,7 @@ vnoremap <tab> %
 nnoremap <leader>1 yypVr=
 
 " Create pydoc template
-nnoremap <leader>d yyp>>O"""<ESC>yyjp
+nnoremap <leader>d yyp>>I""" <ESC>o"""<ESC>
 
 " Handle long lines correctly
 set wrap
