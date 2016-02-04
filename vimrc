@@ -18,7 +18,7 @@ set scrolloff=3
 set visualbell
 set ttyfast
 set laststatus=2
-set undofile
+"set undofile
 set wildmenu
 set wildmode=list:longest
 
