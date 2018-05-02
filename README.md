@@ -10,5 +10,5 @@
 
 # Windows Setup
 1. `mkdir "$HOME\vimfiles"`
-1. `wget ""https://raw.githubusercontent.com/andylytical/vimrc/master/vimrc" -outfile "$HOME\vimfiles\vimrc"`
-1. `wget ""https://raw.githubusercontent.com/andylytical/vimrc/master/gvimrc" -outfile "$HOME\vimfiles\gvimrc"`
+1. `wget "https://raw.githubusercontent.com/andylytical/vimrc/master/vimrc" -outfile "$HOME\vimfiles\vimrc"`
+1. `wget "https://raw.githubusercontent.com/andylytical/vimrc/master/gvimrc" -outfile "$HOME\vimfiles\gvimrc"`
