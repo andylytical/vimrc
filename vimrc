@@ -1,25 +1,37 @@
-" filetype off
-" call pathogen#runtime_append_all_bundles()
-" filetype plugin indent on
+" Manage plugins using vim-plug
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Plugins will be downloaded under the specified directory.
+call plug#begin('~/.vim/plugged')
+
+" Declare the list of plugins.
+Plug 'tpope/vim-commentary'
+Plug 'altercation/vim-colors-solarized'
+Plug 'tpope/vim-sensible'
+" Plug 'junegunn/seoul256.vim'
+
+" List ends here. Plugins become visible to Vim after this call.
+call plug#end()
+
+" Use :PlugInstall to install plugins
+
+
 " See more at: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 
 set ts=4
 set sw=4
 set sts=4
 set expandtab
-set ai
 set showmode
 set nonu
-set ruler
 set nocompatible
 set modelines=0
-set encoding=utf-8
-set scrolloff=3
 set visualbell
 set ttyfast
-set laststatus=2
-"set undofile
-set wildmenu
 set wildmode=list:longest
 
 " see also http://vim.wikia.com/wiki/Highlight_current_line
@@ -41,10 +53,6 @@ vnoremap / /\v
 set ignorecase
 set smartcase
 
-" Make substitutions global by default
-" set gdefault
-" Highlight search results incrementally
-set incsearch
 set showmatch
 set hls
 
@@ -69,9 +77,8 @@ set tw=79
 set formatoptions=qrn1
 set colorcolumn=85
 
-" Show non-printable chars
-"set list
-set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:%
+" Show non-printable chars ... plugin vim-sensible also sets this ... see it it's ok
+"set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 " set list (enable showing non-printable chars)
 " set nolist (to disable)
 
@@ -87,7 +94,4 @@ syntax on
 " this used to be up top, but something overrides it or turns it off
 set showcmd
 
-" Settings for mutt
-autocmd BufNewFile *mutt-* set fo=tcq tw=72
-autocmd BufRead *mutt-* set fo=tcq tw=72
-
+" vim:set ft=vim et sw=2:
