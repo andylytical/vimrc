@@ -12,30 +12,39 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-commentary'
 Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-sensible'
-" Plug 'junegunn/seoul256.vim'
 
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
-
 " Use :PlugInstall to install plugins
 
 
-" See more at: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+" Many settings below borrowed from
+" http://stevelosh.com/blog/2010/09/coming-home-to-vim/
 
-set ts=4
-set sw=4
-set sts=4
-set expandtab
+set showcmd
+set showmatch
 set showmode
-set nonu
-set nocompatible
-set modelines=0
-set visualbell
 set ttyfast
-set wildmode=list:longest
+set visualbell
+set wildmode=list:longest,full
+
+" Tab / Shift related
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+
+" Deal intelligently with case when searching
+set ignorecase
+set smartcase
+
+" Handle long lines correctly
+set wrap
+set tw=79
+set formatoptions=qrn1
+set colorcolumn=85
 
 " see also http://vim.wikia.com/wiki/Highlight_current_line
-":hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 :hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white guibg=darkred guifg=white
 set cursorline
 " toggle cursorline cursorcolumn
@@ -49,20 +58,11 @@ set relativenumber
 nnoremap / /\v
 vnoremap / /\v
 
-" Deal intelligently with case when searching
-set ignorecase
-set smartcase
-
-set showmatch
+" Highlight search matches
 set hls
-
 " Clear highlights by typing <backslash><space>
 " note: default <leader> char is <backslash>
 nnoremap <leader><space> :noh<cr>
-
-" Make tab match bracket pairs (same as % does)
-nnoremap <tab> %
-vnoremap <tab> %
 
 " Shortcut to create a line of ='s below the current line with same
 " length of current line
@@ -71,27 +71,13 @@ nnoremap <leader>1 yypVr=
 " Create pydoc template
 nnoremap <leader>d yyp>>I""" <ESC>o"""<ESC>
 
-" Handle long lines correctly
-set wrap
-set tw=79
-set formatoptions=qrn1
-set colorcolumn=85
-
-" Show non-printable chars ... plugin vim-sensible also sets this ... see it it's ok
-"set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:%
+" What to show for non-printable chars 
+" The plugin "vim-sensible" also sets this, but this one is better
+set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 " set list (enable showing non-printable chars)
 " set nolist (to disable)
 
-" unmap F1 to avoid starting Vim help
-inoremap <F1> <ESC>
-nnoremap <F1> <ESC>
-vnoremap <F1> <ESC>
-
-set syntax=off
-set background=dark
-syntax on
-
 " this used to be up top, but something overrides it or turns it off
-set showcmd
+" set showcmd
 
 " vim:set ft=vim et sw=2:
