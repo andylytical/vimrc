@@ -12,6 +12,7 @@ Plug 'altercation/vim-colors-solarized'
 Plug 'tpope/vim-sensible'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'rodjek/vim-puppet'
 " List ends here. Plugins become visible to Vim after this call.
 call plug#end()
 " Use :PlugInstall to install plugins
