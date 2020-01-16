@@ -80,7 +80,10 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 " set list (enable showing non-printable chars)
 " set nolist (to disable)
 
-" this used to be up top, but something overrides it or turns it off
-" set showcmd
+" More natural split windows
+" See also: https://thoughtbot.com/blog/vim-splits-move-faster-and-more-naturally
+set splitbelow
+set splitright
+
 
 " vim:set ft=vim et sw=2:
