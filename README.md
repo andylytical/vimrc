@@ -3,10 +3,9 @@
 ### Linux
 `curl -o ~/.vimrc https://raw.githubusercontent.com/andylytical/vimrc/master/vimrc`
 
-### Windows (nvim) (powershell):
+### Windows (powershell):
 ```powershell
-mkdir $env:LOCALAPPDATA\nvim -Force
-Invoke-WebRequest  https://raw.githubusercontent.com/andylytical/vimrc/master/vimrc -outfile $env:LOCALAPPDATA\nvim\init.vim
+Invoke-WebRequest https://raw.githubusercontent.com/andylytical/vimrc/master/vimrc -outfile $env:USERPROFILE\_vimrc
 ```
 
-NOTE: Remove vimplug lines for nvim on windows
+NOTE: Remove vimplug lines on windows
