@@ -9,6 +9,5 @@ Invoke-WebRequest https://raw.githubusercontent.com/andylytical/vimrc/master/vim
 ```powershell
 mkdir -path $env:USERPROFILE\vimfiles\colors -Force
 Invoke-WebRequest https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim -outfile $env:USERPROFILE\vimfiles\colors\solarized.vim
-Invoke-WebRequest https://raw.githubusercontent.com/andylytical/vimrc/master/windows/solarized.part | Add-Content -Path $env:USERPROFILE\_vimrc
 Invoke-WebRequest -UseBasicParsing https://raw.githubusercontent.com/andylytical/vimrc/master/windows/solarized.part | Add-Content -NoNewLine -Path $env:USERPROFILE\_vimrc
 ```
