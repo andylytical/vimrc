@@ -62,5 +62,15 @@ set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<,nbsp:%
 set splitbelow
 set splitright
 
+" Yaml syntax
+" https://www.arthurkoziel.com/setting-up-vim-for-yaml/
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+
+" IndentLines settings
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_enabled = 1
+" Toggle IndentLines on/off
+:nnoremap <Leader>i :IndentLinesToggle<CR>
+
 
 " vim:set ft=vim et sw=2:
