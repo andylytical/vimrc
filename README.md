@@ -1,11 +1,18 @@
-# vimrc
+## Linux
+Also works for [GitBash on Windows](https://gitforwindows.org/)
+- `curl -o ~/.vimrc https://raw.githubusercontent.com/andylytical/vimrc/main/vimrc`
 
-### Linux
-- `curl -o ~/.vimrc https://raw.githubusercontent.com/andylytical/vimrc/master/vimplug.part`
-- `curl https://raw.githubusercontent.com/andylytical/vimrc/master/vimrc.part >> ~/.vimrc`
-
-### Windows
-See: [windows](windows/)
+## Windows
+Run all commands in PowerShell as normal user
+- Download vimrc file
+```powershell
+Invoke-WebRequest https://raw.githubusercontent.com/andylytical/vimrc/main/vimrc -outfile $env:USERPROFILE\_vimrc
+```
+- Install Solarized Colorscheme
+```powershell
+mkdir -path $env:USERPROFILE\vimfiles\colors -Force
+Invoke-WebRequest https://raw.githubusercontent.com/altercation/vim-colors-solarized/master/colors/solarized.vim -outfile $env:USERPROFILE\vimfiles\colors\solarized.vim
+```
 
 # Plug-In Docs and Tutorials
 ## VimPlug (plugin manager)
