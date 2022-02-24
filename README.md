@@ -17,7 +17,7 @@ Invoke-WebRequest https://raw.githubusercontent.com/altercation/vim-colors-solar
 # Plug-In Docs and Tutorials
 ## VimPlug (plugin manager)
 - [Vim-Plug](https://github.com/junegunn/vim-plug)
-## 3rd Pary Plug-ins
+## 3rd Party Plug-ins
 - [rodjek/vim-puppet](https://github.com/rodjek/vim-puppet.git)
 - [tpope/vim-commentary](https://github.com/tpope/vim-commentary.git)
 - [tpope/vim-sensible](https://github.com/tpope/vim-sensible.git)
