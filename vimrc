@@ -107,5 +107,9 @@ let g:indentLine_enabled = 1
 " Toggle IndentLines on/off
 :nnoremap <Leader>i :IndentLinesToggle<CR>
 
+" Disable concealment of characters (common in some syntax highlighting
+" schemes)
+" . o O (hiding text in a text-editor, what is the point?)
+set conceallevel=0
 
 " vim:set ft=vim et sw=2:
