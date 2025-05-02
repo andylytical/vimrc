@@ -23,6 +23,7 @@ else
   Plug 'tpope/vim-surround'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
+  Plug 'mzlogin/vim-markdown-toc'
   " List ends here. Plugins become visible to Vim after this call.
   call plug#end()
   " Use :PlugInstall to install plugins

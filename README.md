@@ -1,3 +1,17 @@
+
+<!-- vim-markdown-toc GFM -->
+
+* [Installation](#installation)
+    * [Linux](#linux)
+    * [Windows](#windows)
+* [Plug-In Docs and Tutorials](#plug-in-docs-and-tutorials)
+    * [VimPlug (plugin manager)](#vimplug-plugin-manager)
+    * [3rd Party Plug-ins](#3rd-party-plug-ins)
+* [See also](#see-also)
+
+<!-- vim-markdown-toc -->
+# Installation
+
 ## Linux
 Also works for [GitBash on Windows](https://gitforwindows.org/)
 - `curl -o ~/.vimrc https://raw.githubusercontent.com/andylytical/vimrc/main/vimrc`
@@ -27,6 +41,7 @@ Invoke-WebRequest https://raw.githubusercontent.com/altercation/vim-colors-solar
 - [vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes.git)
 - [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
 - [Yggdroot/indentLine](https://github.com/Yggdroot/indentLine)
+- [mzlogin/vim-markdown-toc](https://github.com/mzlogin/vim-markdown-toc)
 
 # See also
 - http://stevelosh.com/blog/2010/09/coming-home-to-vim/
