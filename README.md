@@ -37,6 +37,7 @@ Invoke-WebRequest https://raw.githubusercontent.com/altercation/vim-colors-solar
 - [tpope/vim-sensible](https://github.com/tpope/vim-sensible.git)
 - [tpope/vim-surround](https://github.com/tpope/vim-surround.git)
   - [Vim Surround Plugin Tutorial](http://www.futurile.net/2016/03/19/vim-surround-plugin-tutorial/)
+  - See also: https://vim-jp.org/vimdoc-en/motion.html
 - [vim-airline/vim-airline](https://github.com/vim-airline/vim-airline.git)
 - [vim-airline/vim-airline-themes](https://github.com/vim-airline/vim-airline-themes.git)
 - [vim-colors-solarized](https://github.com/altercation/vim-colors-solarized)
